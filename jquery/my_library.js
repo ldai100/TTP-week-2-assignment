@@ -11,12 +11,15 @@ $(document).ready(function(){
 	$("#contract").animate({opacity:.5});
 	$("#donate").animate({width:"300px"}, 3000);
 	$("h1").css("background","yellow");
-	$("#toggle").click(function(){
+	$("#expand").click(function(){
 		$("#chaining").animate({width:"60%"}).animate({fontSize:"30px"}).animate({borderWidth:30});
 		
 	});
-	
-	$("h1").animate({width:"100%"}).animate({width:"50%"});
+	$("#reset").click(function(){
+		$("#chaining").animate({width:"150px"}).animate({fontSize:"15px"}).animate({borderWidth:1});
+		
+	});
+	$("h1").animate({width:"80%"}).animate({width:"50%"});
 	
 });
 
